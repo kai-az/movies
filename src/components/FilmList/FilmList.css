@@ -1,0 +1,14 @@
+.film--block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.film--list {
+    width: 880px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 1rem;
+    margin: 0;
+}

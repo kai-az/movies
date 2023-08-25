@@ -1,0 +1,84 @@
+.filter--h3  {
+    font-weight: 500;
+}
+
+.filter--select,
+.filter--active {
+    width: 225px;
+    cursor: pointer;
+    border: 1px solid #e1e1e1;
+    font-size: 14px;
+    padding: 10px 25px 10px 10px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.filter--active{
+    border-color: #296ef9;
+}
+
+
+.filter--select::before,
+.filter--select::after,
+.filter--active::before,
+.filter--active::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 6px;
+    background: #000;
+    position: absolute;
+    top: 15px;
+    border-radius: 2px;
+}
+
+.filter--select::before {
+    right: 10px;
+    transform: rotate(45deg);
+}
+
+
+.filter--select::after {
+    right: 14px;
+    transform: rotate(-45deg);
+}
+
+.filter--active::before {
+    right: 10px;
+    transform: rotate(-45deg);
+}
+
+.filter--active::after {
+    transform: rotate(45deg);
+    right: 14px;
+}
+
+
+.filter--drop {
+    list-style-type: none;
+    width: 225px;
+    padding: 0px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    margin: 0px;
+    z-index: 2;
+}
+
+.filter--drop-hide {
+    display: none;
+}
+
+.filter--option {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #e1e1e1;
+    cursor: pointer;
+}
+
+.filter--option:hover {
+    background: #296ef9;
+    color: #fff;
+}
